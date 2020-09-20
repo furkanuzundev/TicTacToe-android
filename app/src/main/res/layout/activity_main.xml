@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@mipmap/img_background"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/mainLayout"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="156dp"
+            android:background="@mipmap/img_header" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tic-Tac-Toe"
+            android:textSize="50dp"
+            android:fontFamily="@font/pacifico"
+            android:layout_marginTop="15dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:id="@+id/selectPlayerButtons"
+            >
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shadow"
+                android:text="1 Oyuncu"
+                android:id="@+id/selectOnePlayer"
+                android:textColor="#f9fcfb"
+                android:fontFamily="@font/josefin"
+                android:layout_marginTop="10dp"
+                />
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shadow"
+                android:text="2 Oyuncu"
+                android:id="@+id/selectTwoPlayer"
+                android:textColor="#f9fcfb"
+                android:fontFamily="@font/josefin"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/onePlayerLayout"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="1. oyuncu"
+                android:id="@+id/onePlayer_name"
+                android:background="@drawable/cool_input"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/twoPlayerLayout"
+            android:gravity="center"
+            android:visibility="gone"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="1. oyuncu"
+                android:id="@+id/twoPlayer_firstPlayerName"
+                android:background="@drawable/cool_input"
+                android:padding="10dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:hint="2. oyuncu"
+                android:id="@+id/twoPlayer_secondPlayerName"
+                android:background="@drawable/cool_input"
+                android:padding="10dp"
+                />
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shadow"
+            android:text="OYNA"
+            android:textColor="#f9fcfb"
+            android:fontFamily="@font/josefin"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            android:id="@+id/pressPlayGame"
+            />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

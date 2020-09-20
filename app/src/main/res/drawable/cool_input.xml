@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="3dp" android:top="5dp">
+        <shape>
+            <solid android:color="#f1f3f8" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    <!-- White foreground. -->
+    <item android:bottom="2dp" >
+        <shape>
+            <solid android:color="#f9fcfb" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+</layer-list>
